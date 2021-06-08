@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
@@ -14,13 +14,15 @@
     </head>
     <body>
         <header class="header">
-            <nav class="flex flex-jc-sb flex-ai-c">
+            <div class="overlay has-fade"></div>
+
+            <nav class="container flex flex-jc-sb flex-ai-c">
                 <!-- Logo -->
                 <a href="/" class="header__logo">
                     <img src="./dist/images/logo.svg" alt="Logo" />
                 </a>
 
-                <a href="#" class="header__menu hide-for-pc">
+                <a href="#" id="btn-hamburger" class="header__toggle hide-for-pc">
                     <span></span><span></span><span></span>
                 </a>
 
@@ -34,7 +36,23 @@
 
                 <button type="button" class="button hide-for-mobile">Request Invite</button>
             </nav>
+
+            <div class="header__menu container has-fade">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Service</a>
+                <a href="#">Blog</a>
+            </div>
         </header>
+
+        <p>
+            lore50 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, optio
+            temporibus. Ab voluptates praesentium nulla corrupti ad, asperiores aperiam provident
+            unde perspiciatis. Placeat fugit tenetur consequuntur at eveniet ipsum aut accusamus
+            sunt laboriosam minus ad nihil doloribus unde, necessitatibus voluptate aliquam quam
+            quasi corporis soluta? In illo ducimus ea facilis.
+        </p>
 
         <!-- ************** Script *************** -->
         <script src="./app/js/script.js"></script>
