@@ -675,6 +675,7 @@ button:hover,
 
 .footer__logo {
   display: inline-block;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 640px) {
@@ -755,6 +756,12 @@ button:hover,
 
 .footer__links a {
   line-height: 2.25;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.footer__links a:hover {
+  color: #31d35c;
 }
 
 @media (min-width: 1024px) {

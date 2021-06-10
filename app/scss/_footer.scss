@@ -21,6 +21,7 @@
     }
     &__logo {
         display: inline-block;
+        margin-bottom: 3rem;
 
         @include breakpoint-up(medium) {
             margin-bottom: 3rem;
@@ -71,6 +72,10 @@
         }
         a {
             line-height: 2.25;
+            transition: color 300ms ease-in-out;
+            &:hover {
+                color: $limeGreen;
+            }
         }
     }
     &__btn {
