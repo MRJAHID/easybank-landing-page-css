@@ -17,12 +17,45 @@ body {
     font-family: 'Public Sans', sans-serif;
     line-height: 1.3;
     font-weight: 300;
+    overflow-x: hidden;
 
     &.noscroll {
         overflow: hidden;
     }
+
+    @include breakpoint-up(large) {
+        font-size: 2rem;
+    }
 }
 
+h1,
+h2,
+h3 {
+    margin-top: 0px;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
+}
+h1 {
+    margin-bottom: 2.4rem;
+
+    @include breakpoint-up(large) {
+        font-size: 5.2rem;
+    }
+}
+h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-up(large) {
+        font-size: 3.6rem;
+        margin-bottom: 3.6rem;
+    }
+}
+p {
+    line-height: 1.5;
+    margin-bottom: 3.6rem;
+}
 a,
 a:hover,
 a:visited {
@@ -53,7 +86,13 @@ button,
     background: linear-gradient(to right, $limeGreen, $brightCyan);
     border: none;
     color: white;
+    font-size: 1.5rem;
     font-weight: 700;
+    display: inline-block;
+    transition: opacity 300ms ease-in-out;
+    &:hover {
+        opacity: 0.75;
+    }
 }
 
 // Visibiliy
@@ -73,6 +112,47 @@ button,
 // Spacing
 
 .container {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    max-width: 111rem;
+    margin: 0 auto;
+    &--pall {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 9rem;
+            padding-bottom: 9rem;
+        }
+    }
+    &--py {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        @include breakpoint-up(large) {
+            padding-top: 9rem;
+            padding-bottom: 9rem;
+        }
+    }
+    &--px {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+    &--pt {
+        padding-top: 7rem;
+        @include breakpoint-up(large) {
+            padding-top: 9rem;
+        }
+    }
+    &--pb {
+        padding-bottom: 7rem;
+        @include breakpoint-up(large) {
+            padding-bottom: 9rem;
+        }
+    }
+    &--pl {
+        padding-left: 2.4rem;
+    }
+    &--pr {
+        padding-right: 2.4rem;
+    }
 }

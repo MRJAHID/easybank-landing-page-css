@@ -49,6 +49,7 @@
         border-radius: 6px;
         position: absolute;
         width: calc(100% - 5.2rem);
+        z-index: 999;
         a {
             color: $darkBlue;
             padding: 1rem;
